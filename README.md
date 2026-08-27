@@ -1,6 +1,6 @@
 # aindez
 
-Cliente de línea de comandos de la plataforma Aindez: consultá y operá tus
+Cliente de línea de comandos de la plataforma Aindez: consulta y opera tus
 datos de CRM, reclutamiento (ATS) y ERP sin salir de la terminal.
 
 ## Instalación
@@ -18,7 +18,7 @@ curl -fsSL https://github.com/aindez-tech/aindez-releases/releases/latest/downlo
 ```
 
 Ambos verifican la integridad de la descarga. `aindez version` muestra qué
-build tenés.
+build tienes.
 
 ## Empezar
 
@@ -82,7 +82,7 @@ aindez workflow-runs reject <run_id> <clave>... --note "razón"
 ```
 
 Aprobar o rechazar escribe en sistemas externos, por eso siempre pide
-confirmación tipeada y no tiene forma de saltearse: es tu decisión.
+confirmación tipeada y no se puede omitir: es tu decisión.
 
 **Mensajería, base de conocimiento y más**
 
@@ -100,21 +100,21 @@ aindez talent-documents requests list
 
 - `--json` en los comandos de lectura emite JSON parseable.
 - Los códigos de salida distinguen el tipo de error (auth, permisos, red…).
-- Si usás el CLI con Claude Code u otro agente, el archivo `AGENTS.md` que
+- Si usas el CLI con Claude Code u otro agente, el archivo `AGENTS.md` que
   viene junto al binario documenta el contrato completo.
 
 ## Problemas comunes
 
 - **«Sesión expirada»** → `aindez login` de nuevo.
 - **Errores intermitentes del servidor** → las lecturas reintentan solas; si
-  persiste, corré el comando con `--debug` y compartí el `request_id` con
+  persiste, ejecuta el comando con `--debug` y comparte el `request_id` con
   soporte.
 - **Completado de shell** → `aindez completion bash|zsh|fish|powershell`.
 
 ## Desinstalar
 
 1. `aindez logout` (revoca la sesión).
-2. Borrá el binario: `~/.local/bin/aindez` (macOS/Linux) o
+2. Borra el binario: `~/.local/bin/aindez` (macOS/Linux) o
    `%LOCALAPPDATA%\aindez\bin` (Windows).
-3. Borrá la configuración: `~/Library/Application Support/aindez` (macOS),
+3. Borra la configuración: `~/Library/Application Support/aindez` (macOS),
    `~/.config/aindez` (Linux), `%AppData%\aindez` (Windows).
