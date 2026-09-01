@@ -1,0 +1,22 @@
+{
+    "version": "0.3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.3.0/aindez_0.3.0_windows_amd64.zip",
+            "bin": [
+                "aindez.exe"
+            ],
+            "hash": "a35d811c094ca56b8100c7ff01f46ecdd377cd2602346eca0144c811b4f64dbb"
+        },
+        "arm64": {
+            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.3.0/aindez_0.3.0_windows_arm64.zip",
+            "bin": [
+                "aindez.exe"
+            ],
+            "hash": "5246c80bce3fce85332ad1c230ca343cc9bc701319542b03eabf99382c5fa68c"
+        }
+    },
+    "homepage": "https://github.com/aindez-tech/aindez-releases",
+    "license": "Proprietary",
+    "description": "CLI de la plataforma Aindez (CRM, ATS y ERP desde la terminal)"
+}
