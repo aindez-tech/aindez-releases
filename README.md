@@ -252,12 +252,28 @@ aindez cq ana                      # = aindez contacts list --search ana
 Si algo no funciona, `aindez doctor` revisa versión, environment, sesión y
 conectividad con la API en un solo paso.
 
+## ¿Algo no salió como esperabas?
+
+Si intentaste hacer algo y no funcionó (un error, o simplemente no supiste
+cómo pedirlo), cuéntaselo al equipo de Aindez desde el mismo CLI:
+
+```
+aindez report                 # te pregunta qué intentaste, qué esperabas y qué pasó
+aindez report list            # tus reportes y su estado
+aindez report show <id>       # la respuesta del equipo
+```
+
+Se adjunta solo lo necesario para replicarlo: versión del CLI, tu org y el
+último comando que falló (sin valores de flags). Antes de enviar se borran
+tokens, contraseñas y llaves; `aindez report --dry-run` muestra exactamente
+qué se enviaría. Cuando el equipo te responda, te llega una notificación.
+
 ## Problemas comunes
 
 - **«Sesión expirada»** → `aindez login` de nuevo.
 - **Errores intermitentes del servidor** → las lecturas reintentan solas; si
-  persiste, ejecuta el comando con `--debug` y comparte el `request_id` con
-  soporte.
+  persiste, repórtalo con `aindez report`: adjunta el `request_id` del
+  último fallo por ti.
 - **Completado de shell** → `aindez completion bash|zsh|fish|powershell`.
 
 ## Desinstalar
