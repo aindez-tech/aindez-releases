@@ -1,19 +1,19 @@
 {
-    "version": "0.6.1",
+    "version": "0.7.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.6.1/aindez_0.6.1_windows_amd64.zip",
+            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.7.0/aindez_0.7.0_windows_amd64.zip",
             "bin": [
                 "aindez.exe"
             ],
-            "hash": "ae256249f7b50ba082ef6da90e9aa356c2b29c362980b2bbe90f6cfa88d544be"
+            "hash": "3eecd58bd23e48f75f4b6b16656b0df8416321ca2785d53fce6f6fe0dcc40e92"
         },
         "arm64": {
-            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.6.1/aindez_0.6.1_windows_arm64.zip",
+            "url": "https://github.com/aindez-tech/aindez-releases/releases/download/v0.7.0/aindez_0.7.0_windows_arm64.zip",
             "bin": [
                 "aindez.exe"
             ],
-            "hash": "31e5601f46b3a9f00c6b3042f864b0c0e11ef40da97b761cc2f1192206fdc79e"
+            "hash": "1bdd52ee9e4e26c287ef9267d2073cbcd4e7c1ee8d9528da775c8c0ebd82c7c0"
         }
     },
     "homepage": "https://github.com/aindez-tech/aindez-releases",
