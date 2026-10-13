@@ -216,6 +216,23 @@ aindez workflow-runs reject <run_id> <clave>... --note "razón"
 Aprobar o rechazar escribe en sistemas externos, por eso siempre pide
 confirmación escrita y no se puede omitir: es tu decisión.
 
+**Videoentrevistas con IA** (alias `aindez entrevistas`)
+
+```
+aindez entrevistas list [--status in_call] [--candidate-id <id>]
+aindez entrevistas get <id> [--refresh]   # estado, reunión, bot, entrevistadora y errores
+aindez entrevistas create --first-name Ana --email ana@acme.com --job-title "Analista" \
+    --question "Cuéntame de un proyecto" --question "¿Por qué este puesto?"
+aindez entrevistas invite-link <id>       # link nuevo para el candidato (invalida el anterior)
+aindez entrevistas cancel <id>            # saca a la entrevistadora y cierra la entrevista
+aindez entrevistas capacity-test --count 10 --report cap.md   # N entrevistas a la vez (pide confirmación)
+```
+
+`create` imprime el link personal del candidato; también acepta
+`--config entrevista.json` con el bloque completo (preguntas, competencias,
+duración, idioma). `capacity-test` crea entrevistas reales y consume minutos
+de grabación: úsalo en staging.
+
 **Mensajería, base de conocimiento y más**
 
 ```
